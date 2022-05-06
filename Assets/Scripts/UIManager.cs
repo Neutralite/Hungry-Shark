@@ -42,7 +42,7 @@ public class UIManager : MonoBehaviour
     public void updateLives(int livesChange)
     {
         livesScore += livesChange;
-        lives[livesScore].SetActive(!lives[livesScore].active);
+        lives[livesScore].SetActive(false);
     }
 
 }

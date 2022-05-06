@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fish : MonoBehaviour
+public class GoodFish : MonoBehaviour
 {
     public int value = 1;
 
@@ -11,7 +11,7 @@ public class Fish : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             UIManager.instance.updateScore(value);
-            Destroy(this);
+            this.gameObject.SetActive(false);
         }
     }
 }
